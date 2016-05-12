@@ -1,0 +1,22 @@
+extends ./layout.jade
+block content
+  title ABCUSD Parent Resources
+  body(bgcolor='#A4E7EB')
+    #header
+      a(href='/')
+        h1 ⇦Back to the Homepage
+      a(href='/')
+        img(src='/static/img/logo.png')
+    #main
+      #preview
+        a(href='', target='')
+          img(src='/static/img/pdfFiller.png')
+      #docSelectBox
+        h3 Select a Document
+        select#docs
+          option - Choose a document -
+          option#SELPA.eng.esp.chin SELPA Procedural Safeguards
+      #langSelectBox
+        h3 Choose a Language
+        select#langs.language
+    
