@@ -1,6 +1,8 @@
 "use strict";
 
-var express = require("express");
+var express = require("express"),
+	cacOfficers = require("./mock/test.json"),
+	cacEvents = require("./mock/test2.json");
 
 var app = express();
 
@@ -14,7 +16,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/cac", function(req, res){
-	res.render("cacInfo");
+	res.render("cacTest", {terms: cacOfficers, events: cacEvents});
 });
 
 app.get("/parentresources", function(req, res){

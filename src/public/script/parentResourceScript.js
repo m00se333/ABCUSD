@@ -3,7 +3,7 @@ var brochure = $("#docs option:selected").text();
 var $languageSelect = $(".language");
 var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
 var isiPad = navigator.userAgent.match(/iPad/i) != null;
-var pdfMessage = "img/pdfFiller.png";
+var pdfMessage = "/static/img/pdfFiller.png";
 
 
 

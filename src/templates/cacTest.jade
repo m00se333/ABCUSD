@@ -1,0 +1,53 @@
+extends ./layout.jade
+block content
+  title ABCUSD CAC Information
+  body(bgcolor='#A4E7EB')
+    section.content
+      #header
+        a(href='/')
+          h1 Back to the Homepage⇨
+        a(href='/')
+          img(src='/static/img/logo.png')
+      #main
+        #officers
+          .subBoxTopBar
+            h2 CAC Members
+          .contentBox
+            #members
+              for term in terms 
+                h3 #{term.dates + " Term"} 
+                ul
+                  each member in term.members
+                    li
+                      |#{member.name}
+                      br
+                      |#{member.number}
+                      br
+                      |#{member.email}
+        #events
+          .subBoxTopBar
+            h2 Upcoming Events
+          .contentBox
+            #calender
+              h3#eventInfo
+                | Workshops
+                br
+                | 							2015-2016
+                br
+                | 							6:00 - 6:30 p.m. Pizza
+                br
+                | 							6:30 - 8:00 p.m. Presentation
+              each event in events
+                .event
+                  h3 Date:
+                  |#{event.date}
+                  if ("title".length = 2)
+                    h3 #{event.title[0]}
+                    |#{event.title[1]}
+                    h3 Location:
+                    |#{event.location}
+                  else
+                    h3 #{event.title[0]}
+                    h3 Location:
+                    |#{event.location}
+                

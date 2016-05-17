@@ -97,6 +97,7 @@ html {
             padding-top: 3%;
             font-size: 1.5vw;
             height: 5vh;
+            cursor: default;
           }
 
           #pHand {
