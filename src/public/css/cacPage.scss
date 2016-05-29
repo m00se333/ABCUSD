@@ -17,55 +17,86 @@ html {
 }
 
 @mixin topBar {
-		width: 94%;
+		width: 98%;
   		height: 10%;
   		background: white;
-  		margin: 3%;
+  		margin: 3% 1%;
 }
 
 @mixin contentBox {
 	height: 52vh;
-	width: 94%;
+	width: 98%;
 	background: white;
-	margin: 5% 3% 0 3%;
+	margin: 5% 1% 0 1%;
 }
 
 
-#header {
+#cacHeader {
   	height: 20vh;
-  	width: 70%;
+  	width: 90%;
   	margin: 0 auto;
     background: #4682b4;
     box-shadow: -7px 9px 7px 0 #9e9e9e;
-  }h1 {
+    @media only screen and (min-device-width: 375px) and (orientation: portrait){
+      height: 12vh;
+        }
+      } h1 {
       float: left;
       font-style: italic;
       font-size: 3vw;
       color: white;
       margin: 0 0 0 3%;
       padding: 8% 0 0 0;
-    }a img {
+      @media only screen and (min-device-width: 375px) and (orientation: portrait){
+          font-size: 7vw;  
+          }
+      @media only screen and (min-device-width: 375px) and (orientation: landscape){
+        font-size: 6vw;
+        padding: 0%;
+        line-height: 20vh; 
+          }
+      } a img {
       padding: 0;
       height: 100%;
       width: 18%;
       border-radius: 0%;
       float: right;
-    }
+      @media only screen and (min-device-width: 375px) and (orientation: portrait){
+        display: none;
+      }
+      
+}
 
-
-#main {
-  	height: 75vh;
-  	width: 70%;
+#cacMain {
+  	height: 78vh;
+  	width: 90%;
   	margin: 0 auto;
     background: white;
     box-shadow: -7px 7px 5px 0 #9e9e9e;
+    @media only screen and (min-device-width: 375px) and (orientation: portrait){
+        height: 100%;
+    }
   } 
   #officers {
   	@include cacBox;
   	float: left;
     margin: 3% 1% 1% 3%;
+    @media only screen and (min-device-width: 375px) and (orientation: portrait){
+      float: none;
+      width: 96%;
+      box-shadow: none;
+      margin: 2% 2%;
+      display: inline-block;
+        }
   	} .subBoxTopBar {
   		@include topBar;
+      @media only screen and (min-device-width: 375px) and (orientation: portrait){
+          margin: 2% auto;
+        }
+    } h2 {
+      @media only screen and (min-device-width: 375px) and (orientation: portrait){
+          margin: 0%;
+        }
   	} .contentBox {
   		@include contentBox;
       overflow: auto;
@@ -74,8 +105,18 @@ html {
   	@include cacBox;
   	float: right;
     margin: 3% 3% 1% 1%;
+    @media only screen and (min-device-width: 375px) and (orientation: portrait){
+      float: none;
+      width: 96%;
+      box-shadow: none;
+      margin: 2% 2%;
+      display: inline-block;
+    }
   	} .subBoxTopBar {
   	@include topBar;
+    @media only screen and (min-device-width: 375px) and (orientation: portrait){
+          margin: 2% auto;
+    }
   		h2 {
   			font-size: 1.5vw;
   			text-align: center;
@@ -83,6 +124,8 @@ html {
   			display: block;
   		}
   }
+
+
 
 /* Styles for CAC Member lists */
 #members{
@@ -116,8 +159,7 @@ html {
       border: none;
       text-align: center;
       line-height: 3vh;
-    }
-    .event {
+    }.event {
     margin: 5% auto 7%;
     display: block;
     text-align: center;
@@ -130,6 +172,5 @@ html {
       margin: 3% auto; 
       border-bottom: 1px solid black;
       font-size: 1.3vw;
-
-  }
+      }
 }

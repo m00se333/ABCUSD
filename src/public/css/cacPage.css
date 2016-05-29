@@ -8,12 +8,15 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-#header {
+#cacHeader {
   height: 20vh;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   background: #4682b4;
   box-shadow: -7px 9px 7px 0 #9e9e9e; }
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+    #cacHeader {
+      height: 12vh; } }
 
 h1 {
   float: left;
@@ -22,6 +25,14 @@ h1 {
   color: white;
   margin: 0 0 0 3%;
   padding: 8% 0 0 0; }
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+    h1 {
+      font-size: 7vw; } }
+  @media only screen and (min-device-width: 375px) and (orientation: landscape) {
+    h1 {
+      font-size: 6vw;
+      padding: 0%;
+      line-height: 20vh; } }
 
 a img {
   padding: 0;
@@ -29,13 +40,19 @@ a img {
   width: 18%;
   border-radius: 0%;
   float: right; }
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+    a img {
+      display: none; } }
 
-#main {
-  height: 75vh;
-  width: 70%;
+#cacMain {
+  height: 78vh;
+  width: 90%;
   margin: 0 auto;
   background: white;
   box-shadow: -7px 7px 5px 0 #9e9e9e; }
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+    #cacMain {
+      height: 100%; } }
 
 #officers {
   width: 45%;
@@ -44,18 +61,32 @@ a img {
   box-shadow: -7px 9px 7px 0 #9e9e9e;
   float: left;
   margin: 3% 1% 1% 3%; }
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+    #officers {
+      float: none;
+      width: 96%;
+      box-shadow: none;
+      margin: 2% 2%;
+      display: inline-block; } }
 
 .subBoxTopBar {
-  width: 94%;
+  width: 98%;
   height: 10%;
   background: white;
-  margin: 3%; }
+  margin: 3% 1%; }
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+    .subBoxTopBar {
+      margin: 2% auto; } }
+
+@media only screen and (min-device-width: 375px) and (orientation: portrait) {
+  h2 {
+    margin: 0%; } }
 
 .contentBox {
   height: 52vh;
-  width: 94%;
+  width: 98%;
   background: white;
-  margin: 5% 3% 0 3%;
+  margin: 5% 1% 0 1%;
   overflow: auto; }
 
 #events {
@@ -65,12 +96,22 @@ a img {
   box-shadow: -7px 9px 7px 0 #9e9e9e;
   float: right;
   margin: 3% 3% 1% 1%; }
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+    #events {
+      float: none;
+      width: 96%;
+      box-shadow: none;
+      margin: 2% 2%;
+      display: inline-block; } }
 
 .subBoxTopBar {
-  width: 94%;
+  width: 98%;
   height: 10%;
   background: white;
-  margin: 3%; }
+  margin: 3% 1%; }
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+    .subBoxTopBar {
+      margin: 2% auto; } }
   .subBoxTopBar h2 {
     font-size: 1.5vw;
     text-align: center;
