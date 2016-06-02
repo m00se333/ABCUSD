@@ -55,7 +55,9 @@ html {
         @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape){
         font-size: 6vw;
         padding: 0%;
-        line-height: 20vh; 
+        line-height: 20vh;
+        top: 0%;
+        left: 15%; 
           }
     } #logo {
       padding: 0;
@@ -66,7 +68,9 @@ html {
       @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
         display: none;
       }
-      
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape){
+        display: none;
+      }
 }
 
 #cacMain { 

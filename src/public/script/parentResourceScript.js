@@ -37,7 +37,7 @@ $(function(){
         
 
     if (isiPhone === true){
-      
+      $("#langSelectBox").after($("#preview"));
       $brochureSelect.on("change", function(){
         var buttonFile = "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/selpaeng.pdf";
         var file = "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/engSELPA.jpg";
@@ -49,8 +49,7 @@ $(function(){
             $("#preview a").attr("target", "")
           } else {
             $("#langSelectBox .language").show();
-            $("#langSelectBox").after("<a id='pdfButtonLink'><div id='pdfButton'>View PDF</div></a>");
-            $("#pdfButtonLink").attr("href", buttonFile);
+            $("#langSelectBox .language").css("display", "block");
             $("#preview img").attr("src", file)
             $("#preview a").attr("href", "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/selpaeng.pdf");
             $("#preview a").attr("target", "_blank");
