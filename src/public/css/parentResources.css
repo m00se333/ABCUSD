@@ -1,506 +1,98 @@
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*, *:before, *:after {
+  box-sizing: border-box; }
+
+* {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
+  box-sizing: inherit; }
 
-  #header {
-  	height: 20vh;
-  	width: 70%;
-  	margin: 0 auto;
-    background: #4682b4;
-    box-shadow: -7px 9px 7px 0 #9e9e9e;
-  }
-    #header h1 {
-      float: left;
-      font-style: italic;
-      font-size: 3vw;
-      color: white;
-      margin: 0 0 0 3%;
-      padding: 8% 0 0 0;
-      line-height: normal;
-    }
+*:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
 
-    #header a img {
-      padding: 0;
-      height: 100%;
-      width: 18%;
-      border-radius: 0%;
-      float: right;
-    }
+#header {
+  height: 20vh;
+  width: 70%;
+  margin: 0 auto;
+  background: #4682b4;
+  box-shadow: -7px 9px 7px 0 #9e9e9e; }
+  #header h1 {
+    float: left;
+    font-style: italic;
+    font-size: 4vw;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    position: relative;
+    top: 35%;
+    left: 5%; }
+  #header a img {
+    padding: 0;
+    height: 100%;
+    width: 18%;
+    border-radius: 0%;
+    float: right; }
 
-  #main {
-  	height: 75vh;
-  	width: 70%;
-  	margin: 0 auto;
-    background: white;
-    box-shadow: -7px 7px 5px 0 #9e9e9e;
-  }
+#main {
+  height: 75vh;
+  width: 70%;
+  margin: 0 auto;
+  background: white;
+  box-shadow: -7px 7px 5px 0 #9e9e9e; }
 
-  		#preview {
-  			height: 65vh;
-  			width: 50%;
-  			float: right;
-  			margin: 3% 10% 0 0;
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        display: inline-block;
-  		}
-            #preview img {
-              width: 100%;
-              height: 65vh;
-            }
+#preview {
+  height: 65vh;
+  width: 50%;
+  float: right;
+  margin: 3% 10% 0 0;
+  box-shadow: -7px 7px 5px 0 #9e9e9e;
+  display: inline-block; }
 
-  		#docSelectBox {
-  			height: 14vh;
-  			width: 23%;
-  			margin: 3% 0 0 10%;	
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        background: #4682b4;
-        color: white;
-        padding-top: 1%;
-        display: inline-block;
-  		}	
-      			#docSelectBox h3 {
-      				text-align: center;
-      				margin: 0 0 0 0;
-      			}
+a img {
+  width: 100%;
+  height: 65vh; }
 
-      			#docs {
-      				margin: 6% 2.5% 0 2.5%;
-              text-align: center;
-              width: 95%;
-              font-size: 0.9vw;
-      			}
+#docSelectBox {
+  height: 14vh;
+  width: 23%;
+  margin: 3% 0 0 10%;
+  box-shadow: -7px 7px 5px 0 #9e9e9e;
+  background: #4682b4;
+  color: white;
+  padding-top: 1%;
+  display: inline-block; }
 
-  		#langSelectBox {
-  			height: 14vh;
-  			width: 23%;	
-  			margin: 5% 0 0 10%;
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        background: #4682b4;
-        color: white;
-        padding-top: 1%;
-  		}
-      			#langSelectBox h3 {
-      				text-align: center;
-      				margin: 2% 0 0 0;
+h3 {
+  text-align: center;
+  margin: 0 0 0 0; }
 
-      			}
+#docs {
+  margin: 6% 2.5% 0 2.5%;
+  text-align: center;
+  width: 95%;
+  font-size: 0.9vw; }
 
-      			#langs {
-      				margin: 5% 25% 5% 25%;
-              display: none;
-              font-size: 0.9vw;
-              width: 50%
-      			}
+#langSelectBox {
+  height: 14vh;
+  width: 23%;
+  margin: 5% 0 0 10%;
+  box-shadow: -7px 7px 5px 0 #9e9e9e;
+  background: #4682b4;
+  color: white;
+  padding-top: 1%; }
 
-/* ////////////////////////////////// iPhone Styles /////////////////////////////////////// */
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-    #header {
-    height: 20vh;
-    width: 95%;
-    margin: 0 auto;
-    background: #4682b4;
-    box-shadow: -7px 9px 7px 0 #9e9e9e;
-  }
+h3 {
+  text-align: center;
+  margin: 2% 0 0 0; }
 
-      #header h1 {
-        float: left;
-        font-style: italic;
-        font-size: 5vw;
-        color: white;
-        margin: 0 0 0 3%;
-        padding: 5% 0 0 0;
-      }
+#langs {
+  margin: 5% 25% 5% 25%;
+  display: none;
+  font-size: 0.9vw;
+  width: 50%; }
 
-      #header a img {
-        padding: 0;
-        height: 100%;
-        width: 18%;
-        border-radius: 0%;
-        float: right;
-        display: none;
-      }
-
-  #main {
-    height: 75vh;
-    width: 95%;
-    margin: 0 auto;
-    background: white;
-    box-shadow: -7px 7px 5px 0 #9e9e9e;
-  }
-      #preview {
-        height: 60vh;
-        width: 30%;
-        float: right;
-        margin: 3% 10% 0 0;
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        display: inline-block;
-      }
-            #preview img {
-              width: 100%;
-              height: 60vh;
-            }
-
-      #docSelectBox {
-        height: 20vh;
-        width: 40%;
-        margin: 7% 0 0 10%; 
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        background: #4682b4;
-        color: white;
-        padding-top: 1%;
-        display: inline-block;
-      } 
-            #docSelectBox h3 {
-              text-align: center;
-              margin: 0 0 0 0;
-            }
-
-            #docs {
-              margin: 6% 5% 0 5%;
-              text-align: center;
-              font-size: 2vw;
-              width: 90%;
-            }
-
-      #langSelectBox {
-        height: 20vh;
-        width: 40%; 
-        margin: 5% 0 0 10%;
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        background: #4682b4;
-        color: white;
-        padding-top: 1%;
-      }
-            #langSelectBox h3 {
-              text-align: center;
-              margin: 2% 0 0 0;
-
-            }
-
-            #langs {
-              margin: 5% 20% 5% 20%;
-              display: none;
-              font-size: 2vw;
-              width: 60%;
-            }
-      #pdfButton {
-        display: none;
-        height: 10vh;
-        margin: 10% auto;
-      }
-
-  }
-
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
-    #header {
-    height: 20vh;
-    width: 95%;
-    margin: 0 auto;
-    background: #4682b4;
-    box-shadow: -7px 9px 7px 0 #9e9e9e;
-  }
-
-      #header h1 {
-        float: left;
-        font-style: italic;
-        font-size: 8vw;
-        color: white;
-        margin: 0 0 0 3%;
-        padding: 15% 0 0 0;
-      }
-
-      #header a img {
-        padding: 0;
-        height: 100%;
-        width: 18%;
-        border-radius: 0%;
-        float: right;
-        display: none;
-      }
-
-  #main {
-    height: 75vh;
-    width: 95%;
-    margin: 0 auto;
-    background: white;
-    box-shadow: -7px 7px 5px 0 #9e9e9e;
-  }
-      #preview {
-
-        height: 60vh;
-        width: 50%;
-        float: left;
-        margin: 3% 10% 0 0;
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        display: none;
-        clear: both;
-      }
-            #preview img {
-              width: 100%;
-              height: 60vh;
-            }
-
-      #docSelectBox {
-        height: 20vh;
-        width: 75%;
-        margin: 5% 15% 2% 12.5%; 
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        background: #4682b4;
-        color: white;
-        padding-top: 1%;
-        display: inline-block;
-      } 
-            #docSelectBox h3 {
-              text-align: center;
-              margin: 5% 0 0 0;
-            }
-
-            #docs {
-              margin: 8% 5% 0 5%;
-              font-size: 4vw;
-              width: 90%;
-            }
-
-      #langSelectBox {
-        height: 20vh;
-        width: 75%; 
-        margin: 2% 15% 5% 12.5%;
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        background: #4682b4;
-        color: white;
-        padding-top: 1%;
-        display: block;
-      }
-            #langSelectBox h3 {
-              text-align: center;
-              margin: 5% 0 0 0;
-
-            }
-
-            #langs {
-              margin: 8% 20% 5% 20%;
-              display: none;
-              font-size: 4vw;
-              width: 60%
-
-            }
-      #pdfButtonLink {
-        text-decoration: none;
-      }
-      #pdfButton {
-        display: block;
-        height: 20vh;
-        margin: 0% 15% 2% 12.5%;
-        text-align: center;
-        text-decoration: none;
-        width: 75%;
-        line-height: 19vh;
-        background: #4682b4;
-        color: white;
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        font-size: 8vw;
-      }
-
-  }
-
-  /* ///////////////////////////////////// iPad Styles /////////////////////////////////// */
-
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: landscape) {
-
-  #header {
-    height: 20vh;
-    width: 95%;
-    margin: 0 auto;
-    background: #4682b4;
-    box-shadow: -7px 9px 7px 0 #9e9e9e;
-  }
-
-      #header h1 {
-      float: left;
-      font-style: italic;
-      font-size: 5vw;
-      color: white;
-      margin: 0 0 0 3%;
-      padding: 5% 0 0 0;
-    }
-
-    #header a img {
-      padding: 0;
-      height: 100%;
-      width: 18%;
-      border-radius: 0%;
-      float: right;
-    }
-
-  #main {
-    height: 75vh;
-    width: 95%;
-    margin: 0 auto;
-    background: white;
-    box-shadow: -7px 7px 5px 0 #9e9e9e;
-  }
-
-      #preview {
-        height: 65vh;
-        width: 50%;
-        float: none;
-        margin: 2% 2% 0 5%;
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        display: inline-block;
-      }
-            #preview img {
-              width: 100%;
-              height: 65vh;
-            }
-
-      #docSelectBox {
-        height: 15vh;
-        width: 35%;
-        margin: 3% 0 0 5%; 
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        background: #4682b4;
-        color: white;
-        padding-top: 1%;
-        display: inline-block;
-        float: left;
-      } 
-            #docSelectBox h3 {
-              text-align: center;
-              margin: 0 0 0 0;
-            }
-
-            #docs {
-              margin: 6% 2.5% 0 2.5%;
-              text-align: center;
-              width: 95%;
-              font-size: 2.2vw;
-            }
-
-      #langSelectBox {
-        height: 15vh;
-        width: 35%; 
-        margin: 5% 0 0 5%;
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        background: #4682b4;
-        color: white;
-        padding-top: 1%;
-        display: inline-block;
-        float: left;
-        clear: both;
-      }
-            #langSelectBox h3 {
-              text-align: center;
-              margin: 2% 0 0 0;
-
-            }
-
-            #langs {
-              margin: 5% 25% 5% 25%;
-              display: none;
-              font-size: 3vw;
-              width: 50%
-            }
-
-    }
-
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
-
-  #header {
-    height: 15vh;
-    width: 90%;
-    margin: 0 auto;
-    background: #4682b4;
-    box-shadow: -7px 9px 7px 0 #9e9e9e;
-  }
-
-      #header h1 {
-        float: left;
-        font-style: italic;
-        font-size: 5vw;
-        color: white;
-        margin: 0 0 0 3%;
-        padding: 10% 0 0 0;
-      }
-
-      #header a img {
-        padding: 0;
-        height: 100%;
-        width: 25%;
-        border-radius: 0%;
-        float: right;
-      }
-
-  #main {
-    height: 82vh;
-    width: 90%;
-    margin: 0 auto;
-    background: white;
-    box-shadow: -7px 7px 5px 0 #9e9e9e;
-  }
-
-      #preview {
-        height: 60vh;
-        width: 80%;
-        float: none;
-        margin: 0 auto;
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        display: block;
-      }
-            #preview img {
-              width: 100%;
-              height: 60vh;
-            }
-
-      #docSelectBox {
-        height: 10vh;
-        width: 45%;
-        margin: 5% 0 5% 2.5%; 
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        background: #4682b4;
-        color: white;
-        padding-top: 1%;
-        display: inline-block;
-      } 
-            #docSelectBox h3 {
-              text-align: center;
-              margin: 0 0 0 0;
-            }
-
-            #docs {
-              margin: 6% 2.5% 0 2.5%;
-              text-align: center;
-              width: 95%;
-              font-size: 2.5vw;
-            }
-
-      #langSelectBox {
-        height: 10vh;
-        width: 45%; 
-        margin: 5% 2.5% 5% 0;
-        box-shadow: -7px 7px 5px 0 #9e9e9e;
-        background: #4682b4;
-        color: white;
-        padding-top: 1%;
-        display: inline-block;
-        float: right;
-      }
-            #langSelectBox h3 {
-              text-align: center;
-              margin: 2% 0 0 0;
-
-            }
-
-            #langs {
-              margin: 5% 25% 5% 25%;
-              display: none;
-              font-size: 2.5vw;
-              width: 50%
-            }
-  }
+/*# sourceMappingURL=parentResources.css.map */

@@ -23,8 +23,10 @@ h1 {
   font-style: italic;
   font-size: 4vw;
   color: white;
-  margin: 0 0 0 3%;
-  padding: 7% 0 0 0; }
+  position: relative;
+  top: 35%;
+  left: 5%;
+  margin: 0; }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
     h1 {
       font-size: 8vw; } }
