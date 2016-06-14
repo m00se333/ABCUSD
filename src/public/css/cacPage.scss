@@ -40,6 +40,9 @@ html {
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
       height: 12vh;
         }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+      height: 12vh;
+      }
     } h1 {
       float: left;
       font-style: italic;
@@ -57,8 +60,22 @@ html {
         padding: 0%;
         line-height: 20vh;
         top: 0%;
-        left: 15%; 
+        left: -6%; 
+        float: right;
           }
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+        font-size: 6vw;
+        float: right;
+        top: 35%;
+        left: -6%;
+        }
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+        float: right;
+        top: 35%;
+        left: -6%;
+        right: 10%;
+        font-size: 5vw;
+      }
     } #logo {
       padding: 0;
       height: 100%;
@@ -69,8 +86,20 @@ html {
         display: none;
       }
       @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape){
-        display: none;
+        width: 15%;
+        float: left;
+        height: 100.5%;
       }
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+        width: 18%;
+        float: left;
+        height: 100.5%;
+      }
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+        width: 18%;
+        float: left;
+      }
+
 }
 
 #cacMain { 
@@ -80,9 +109,12 @@ html {
     background: white;
     box-shadow: -7px 7px 5px 0 #9e9e9e;
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
-        height: 100%;
+      height: 100%;
     }
      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+      height: 100%;
+    }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
       height: 100%;
     }
   } 
@@ -104,6 +136,13 @@ html {
       margin: 2% 2%;
       display: inline-block;
       height: 105%;
+        }
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+      float: none;
+      width: 96%;
+      box-shadow: none;
+      margin: 2% 2%;
+      display: inline-block;
         }
   	} .subBoxTopBar {
   		@include topBar;
@@ -130,6 +169,13 @@ html {
       display: inline-block;
       height: 105%;
         }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+      float: none;
+      width: 96%;
+      box-shadow: none;
+      margin: 2% 2%;
+      display: inline-block;
+        }
   	} .subBoxTopBar {
   	@include topBar;
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
@@ -153,6 +199,10 @@ html {
           padding: 0;
           line-height: 150%;
           margin: 0;
+        }
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+          font-size: 5vw;
+          padding: 2% 0;
         }  
   		}
   } .contentBox {
@@ -177,9 +227,12 @@ html {
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
       font-size: 6vw;
     }
-     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
       font-size: 4vw;
     }  
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+      font-size: 4.5vw;
+    }
   }
   ul {
     list-style: none;
@@ -195,6 +248,10 @@ html {
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
       font-size: 3vw;
       line-height: 4vw;
+    }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+      font-size: 4vw;
+      line-height: 5vw;
     }
   }
 }
@@ -228,8 +285,11 @@ html {
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
         font-size: 4vw;
       }
-     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
       font-size: 3vw;
+      }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+        font-size: 3vw;
       }  
     }  h3 {
       width: 65%;
@@ -243,6 +303,10 @@ html {
        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
         font-size: 4vw;
         line-height: 100%;
+      }
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+        font-size: 4vw;
+        line-height: 5vw;
       }
     }
 }
