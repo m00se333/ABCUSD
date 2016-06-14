@@ -54,6 +54,14 @@ h1 {
       left: -6%;
       right: 10%;
       font-size: 5vw; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+    h1 {
+      font-size: 6vw;
+      padding: 0%;
+      line-height: 20vh;
+      top: 0%;
+      left: -6%;
+      float: right; } }
 
 #logo {
   padding: 0;
@@ -78,6 +86,12 @@ h1 {
     #logo {
       width: 18%;
       float: left; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+    #logo {
+      width: 15%;
+      float: left;
+      height: 100%;
+      display: inline-block; } }
 
 #cacMain {
   height: 78vh;
@@ -124,6 +138,9 @@ h1 {
       box-shadow: none;
       margin: 2% 2%;
       display: inline-block; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+    #officers {
+      height: 90%; } }
 
 .subBoxTopBar {
   width: 98%;
@@ -167,6 +184,9 @@ h1 {
       box-shadow: none;
       margin: 2% 2%;
       display: inline-block; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+    #events {
+      height: 90%; } }
 
 .subBoxTopBar {
   width: 98%;
@@ -199,6 +219,10 @@ h1 {
       .subBoxTopBar h2 {
         font-size: 5vw;
         padding: 2% 0; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+      .subBoxTopBar h2 {
+        font-size: 3vw;
+        padding: 0%; } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
   .contentBox {
@@ -224,6 +248,9 @@ h1 {
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
       #members h3 {
         font-size: 4.5vw; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+      #members h3 {
+        font-size: 3vw; } }
   #members ul {
     list-style: none;
     padding: 0;
@@ -243,6 +270,10 @@ h1 {
       #members li {
         font-size: 4vw;
         line-height: 5vw; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+      #members li {
+        font-size: 2.5vw;
+        line-height: 3vw; } }
 
 /* Styles for CAC events */
 #calender {
@@ -262,6 +293,10 @@ h1 {
       #calender #eventInfo {
         font-size: 5vw;
         line-height: 6vw; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+      #calender #eventInfo {
+        font-size: 3vw;
+        line-height: 3vw; } }
   #calender .event {
     margin: 5% auto 7%;
     display: block;
@@ -279,6 +314,9 @@ h1 {
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
       #calender .event {
         font-size: 3vw; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+      #calender .event {
+        font-size: 2vw; } }
   #calender h3 {
     width: 65%;
     margin: 3% auto;
@@ -296,5 +334,9 @@ h1 {
       #calender h3 {
         font-size: 4vw;
         line-height: 5vw; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+      #calender h3 {
+        font-size: 2.5vw;
+        line-height: 3vw; } }
 
 /*# sourceMappingURL=cacPage.css.map */
