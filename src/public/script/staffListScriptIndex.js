@@ -2,13 +2,6 @@ var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
 var isiPad = navigator.userAgent.match(/iPad/i) != null;
 
 
-(function detectMobileSize(){
-
-	if (screen.width === 736){
-		
-	}
-})()
-
 if (isiPhone === true) {
 	console.log("iPhone test");
 	$("#sList").click(function (){

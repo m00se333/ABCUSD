@@ -42,13 +42,20 @@ html {
     width: 50%; }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
       #topBanner img {
-        width: 95%; } }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        width: 95%;
+        height: 95%;
+        padding-top: 5%; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
       #topBanner img {
-        width: 95%; } }
+        width: 95%;
+        height: 95%;
+        padding-top: 4%; } }
     @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
       #topBanner img {
         width: 50%; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+      #topBanner img {
+        width: 95%; } }
 
 #mobileStaffList {
   display: none;
@@ -193,9 +200,8 @@ html {
     border-right: 0.5px solid #D4D4D4; }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
       #links div {
-        display: inline-block;
-        width: 23%;
-        height: 15vh; } }
+        height: 15vh;
+        padding-top: 5vh; } }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
       #links div {
         border: 0px solid black;
@@ -239,6 +245,30 @@ html {
     #links div:hover {
       background: #4682b4;
       color: white; }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+        #links div:hover {
+          color: black;
+          background: white; } }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+        #links div:hover {
+          color: black;
+          background: white; } }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        #links div:hover {
+          color: black;
+          background: white; } }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        #links div:hover {
+          color: black;
+          background: white; } }
+      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+        #links div:hover {
+          color: black;
+          background: white; } }
+      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+        #links div:hover {
+          color: black;
+          background: white; } }
   #links a {
     text-decoration: none;
     color: black; }

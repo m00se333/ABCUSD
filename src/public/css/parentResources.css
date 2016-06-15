@@ -73,6 +73,9 @@ html {
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
       #header a img {
         width: 15%; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+      #header a img {
+        width: 15%; } }
 
 #main {
   height: 75vh;
@@ -108,9 +111,9 @@ html {
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
     #preview {
       float: none;
-      width: 80%;
-      margin: 3% 10%;
-      height: 50vh; } }
+      width: 75%;
+      margin: 3% 12.5%;
+      height: 46vh; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
     #preview {
       margin: 3% 0 0 5%;
@@ -157,9 +160,9 @@ a img {
   display: inline-block; }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
     #docSelectBox {
-      height: 10vh;
-      width: 50%;
-      margin: 3% 25% 1.5%; } }
+      height: 15vh;
+      width: 60%;
+      margin: 3% 20% 1.5%; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
     #docSelectBox {
       margin: 3% 5% 1% 5%;
@@ -240,9 +243,9 @@ h3 {
   padding-top: 1%; }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
     #langSelectBox {
-      height: 10vh;
-      width: 50%;
-      margin: 1.5% 25%; } }
+      height: 15vh;
+      width: 60%;
+      margin: 1.5% 20%; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
     #langSelectBox {
       margin: 1% 5% 1% 5%;
@@ -282,7 +285,7 @@ h3 {
   margin: 2% 0 0 0; }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
     h3 {
-      font-size: 5vw; } }
+      font-size: 6vw; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
     h3 {
       font-size: 3.5vw; } }

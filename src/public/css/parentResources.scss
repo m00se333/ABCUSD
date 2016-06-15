@@ -76,6 +76,9 @@
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape){
         width: 15%;
       }
+    @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape){
+        width: 15%;
+      }
     }
   }
 
@@ -113,9 +116,9 @@
   display: inline-block;
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
       float: none;
-      width: 80%;
-      margin: 3% 10%;
-      height: 50vh;
+      width: 75%;
+      margin: 3% 12.5%;
+      height: 46vh;
     }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape){
     margin: 3% 0 0 5%;
@@ -162,9 +165,9 @@
   padding-top: 1%;
   display: inline-block;
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
-    height: 10vh;
-    width: 50%;
-    margin: 3% 25% 1.5%;
+    height: 15vh;
+    width: 60%;
+    margin: 3% 20% 1.5%;
     }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape){
     margin: 3% 5% 1% 5%;
@@ -246,9 +249,9 @@
   color: white;
   padding-top: 1%;
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
-    height: 10vh;
-    width: 50%;
-    margin: 1.5% 25%;
+    height: 15vh;
+    width: 60%;
+    margin: 1.5% 20%;
     }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape){
     margin: 1% 5% 1% 5%;
@@ -287,7 +290,7 @@
     text-align: center;
     margin: 2% 0 0 0;
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
-      font-size: 5vw;  
+      font-size: 6vw;  
       }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape){
       font-size: 3.5vw;

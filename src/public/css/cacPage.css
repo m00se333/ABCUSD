@@ -138,6 +138,9 @@ h1 {
       box-shadow: none;
       margin: 2% 2%;
       display: inline-block; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    #officers {
+      height: 70vh; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
     #officers {
       height: 90%; } }
@@ -184,6 +187,9 @@ h1 {
       box-shadow: none;
       margin: 2% 2%;
       display: inline-block; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    #events {
+      height: 70vh; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
     #events {
       height: 90%; } }
@@ -205,6 +211,10 @@ h1 {
     text-align: center;
     padding: 3% 0 0 0;
     display: block; }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+      .subBoxTopBar h2 {
+        font-size: 3vw;
+        padding: 0%; } }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
       .subBoxTopBar h2 {
         font-size: 7vw;
@@ -219,10 +229,10 @@ h1 {
       .subBoxTopBar h2 {
         font-size: 5vw;
         padding: 2% 0; } }
-    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
       .subBoxTopBar h2 {
-        font-size: 3vw;
-        padding: 0%; } }
+        font-size: 3.5vw;
+        padding: 1% 0 0 0; } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
   .contentBox {
@@ -239,6 +249,9 @@ h1 {
     display: block;
     margin: 0 auto;
     text-decoration: underline; }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+      #members h3 {
+        font-size: 2.5vw; } }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
       #members h3 {
         font-size: 6vw; } }
@@ -248,9 +261,9 @@ h1 {
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
       #members h3 {
         font-size: 4.5vw; } }
-    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
       #members h3 {
-        font-size: 3vw; } }
+        font-size: 2.5vw; } }
   #members ul {
     list-style: none;
     padding: 0;
@@ -259,6 +272,10 @@ h1 {
   #members li {
     margin: 5% 0 5% 20%;
     line-height: 3vh; }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+      #members li {
+        font-size: 2.5vw;
+        line-height: 3vw; } }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
       #members li {
         font-size: 5vw; } }
@@ -270,10 +287,9 @@ h1 {
       #members li {
         font-size: 4vw;
         line-height: 5vw; } }
-    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
       #members li {
-        font-size: 2.5vw;
-        line-height: 3vw; } }
+        font-size: 2vw; } }
 
 /* Styles for CAC events */
 #calender {
@@ -314,6 +330,9 @@ h1 {
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
       #calender .event {
         font-size: 3vw; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      #calender .event {
+        font-size: 2vw; } }
     @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
       #calender .event {
         font-size: 2vw; } }
@@ -334,6 +353,10 @@ h1 {
       #calender h3 {
         font-size: 4vw;
         line-height: 5vw; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      #calender h3 {
+        font-size: 2.5vw;
+        line-height: 3vw; } }
     @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
       #calender h3 {
         font-size: 2.5vw;

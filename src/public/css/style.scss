@@ -18,6 +18,7 @@ html {
     box-sizing: inherit;
   }
 }
+
 #topBanner {
   width: 90%;
   height: 20vh;
@@ -42,15 +43,22 @@ html {
     display: block;
     height: 100%;
     width: 50%;
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
-    width: 95%;
-    }
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
-    width: 95%;
-    }
-    @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape){
-    width: 50%;
-    }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+      width: 95%;
+      height: 95%;
+      padding-top: 5%;
+      }
+      @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait){
+      width: 95%;
+      height: 95%;
+      padding-top: 4%;
+      }
+      @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape){
+      width: 50%;
+      }
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
+      width: 95%;
+      }
   }
 }
 #mobileStaffList {
@@ -196,9 +204,8 @@ html {
     border-top: 0.5px solid #D4D4D4;
     border-right: 0.5px solid #D4D4D4;
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-      display: inline-block;
-      width: 23%;
       height: 15vh;
+      padding-top: 5vh;
     }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
       border: 0px solid black;
@@ -241,6 +248,30 @@ html {
       border-right: 0.5px solid #D4D4D4;
     }
     &:hover {
+          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+            color: black;
+            background: white;
+          } 
+          @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+            color: black;
+            background: white;
+          }
+          @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: landscape) {
+            color: black;
+            background: white;
+          }
+          @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
+            color: black;
+            background: white;
+          }
+          @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) {
+            color: black;
+            background: white;
+          }
+          @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+            color: black;
+            background: white;
+          } 
       background: #4682b4;
       color: white;
     }
