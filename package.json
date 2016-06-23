@@ -2,7 +2,7 @@
   "name": "abcusd-spec-ed-resources",
   "version": "1.0.0",
   "description": "special education website",
-  "main": "app.js",
+  "main": "src/app.js",
   "engines": {
     "node": "^4.4.2"
   },
