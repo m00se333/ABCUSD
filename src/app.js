@@ -1,8 +1,8 @@
 "use strict";
 
 var express = require("express"),
-	cacOfficers = require("/mock/test.json"),
-	cacEvents = require("/mock/test2.json");
+	cacOfficers = require("./mock/test.json"),
+	cacEvents = require("./mock/test2.json");
 
 var app = express();
 var port = process.env.PORT || 8080;
