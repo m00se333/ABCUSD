@@ -1,5 +1,5 @@
 {
-  "name": "abcusd-spec-ed-resources",
+  "name": "abcusd",
   "version": "1.0.0",
   "description": "special education website",
   "main": "src/app.js",
