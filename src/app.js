@@ -24,6 +24,6 @@ app.get("/parentresources", function(req, res){
 	res.render("parentResources");
 });
 
-app.listen("abcusd.herokuapp.com", function(){
-	console.log("Frontend server is running on port 5555.")
+app.listen(port, function(){
+	console.log("Frontend server is running on " + port)
 });

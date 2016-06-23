@@ -7,18 +7,12 @@
     "node": "4.4.2"
   },
   "scripts": {
-    "start": "node src/app.js"
+    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/m00se333/ABCUSD.git"
   },
-  "author": "Maurice Cunningham",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/m00se333/ABCUSD/issues"
-  },
-  "homepage": "https://github.com/m00se333/ABCUSD#readme",
   "dependencies": {
     "express": "^4.14.0",
     "jade": "^1.11.0"
