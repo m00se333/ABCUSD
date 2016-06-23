@@ -5,6 +5,7 @@ var express = require("express"),
 	cacEvents = require("./mock/test2.json");
 
 var app = express();
+var port = process.env.PORT || 8080;
 
 app.use("/static", express.static(__dirname + "/public"))
 
@@ -24,5 +25,5 @@ app.get("/parentresources", function(req, res){
 });
 
 app.listen("abcusd.herokuapp.com", function(){
-	console.log("Frontend server is running at " + port);
+	console.log("Frontend server is running on port 5555.")
 });
