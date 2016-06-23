@@ -4,7 +4,7 @@
   "description": "special education website",
   "main": "src/app.js",
   "engines": {
-    "node": "4.4.2"
+    "node": "^4.4.2"
   },
   "scripts": {
     "start": "node src/app.js"
