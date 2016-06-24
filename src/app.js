@@ -1,7 +1,7 @@
 "use strict";
 
 var express = require("express");
-var	cacOfficers = require(__dirname);
+var	cacOfficers = require("/mock/test.json");
 var	cacEvents = require("/mock/test2.json");
 
 var app = express();
