@@ -2,7 +2,7 @@
   "name": "abcusd",
   "version": "1.0.0",
   "description": "special education website",
-  "main": "src/app.js",
+  "main": "ABCUSD/",
   "engines": {
     "node": "^4.4.2"
   },
