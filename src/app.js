@@ -1,14 +1,14 @@
 "use strict";
 
 var express = require("express");
-var	cacOfficers = require("./mock/test.json");
-var	cacEvents = require("./mock/test2.json");
+var	cacOfficers = require(__dirname +"/mock/test.json");
+var	cacEvents = require(__dirname + "/mock/test2.json");
 
 var app = express();
 var port = process.env.PORT || 8080;
 
 app.use("/static", express.static(__dirname + "/public"))
-
+console.log(__dirname)
 app.set("view engine", "jade");
 app.set("views", __dirname + "/templates");
 
