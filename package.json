@@ -2,10 +2,7 @@
   "name": "abcusd",
   "version": "1.0.0",
   "description": "special education website",
-  "main": "",
-  "engines": {
-    "node": "^4.4.2"
-  },
+  "main": "index.js",
   "scripts": {
     "start": "node src/app.js"
   },
