@@ -201,7 +201,8 @@ html {
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
       #links div {
         height: 15vh;
-        padding-top: 5vh; } }
+        padding-top: 5vh;
+        width: 23%; } }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
       #links div {
         border: 0px solid black;
