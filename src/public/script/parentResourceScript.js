@@ -37,7 +37,7 @@ $(function(){
           $("#langSelectBox").after($("#preview"));
           $brochureSelect.on("change", function(){
             var buttonFile = "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/selpaeng.pdf";
-            var file = "./public/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/engSELPA.jpg";
+            var file = "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/engSELPA.JPG";
             $("#pdfButton").remove();
               if ($("#docs option:selected").text().match("^-")){
                 $("#langSelectBox .language").hide();
@@ -55,7 +55,7 @@ $(function(){
             });
 
             $languageSelect.on("change", function(){
-             $("#preview img").attr("src","./public/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/" + $(".language option:selected").attr("id") + "SELPA.jpg");
+             $("#preview img").attr("src","/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/" + $(".language option:selected").attr("id") + "SELPA.JPG");
              $("#preview a").attr("href", "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/selpa" + $(".language option:selected").attr("id") + ".pdf");
              $("#pdfButton").attr("href", "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/selpa" + $(".language option:selected").attr("id") + ".pdf");
              $("#preview a").attr("target", "_blank");
@@ -65,7 +65,7 @@ $(function(){
           
               $("#langSelectBox").after($("#preview"))
               $brochureSelect.on("change", function(){
-              var file = "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/engSELPA.jpg";
+              var file = "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/engSELPA.JPG";
               
               if ($("#docs option:selected").text().match("^-")){
                     $("#langSelectBox .language").hide();
@@ -83,7 +83,7 @@ $(function(){
             });
 
             $languageSelect.on("change", function() {
-             $("#preview img").attr("src","/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/" + $(".language option:selected").attr("id") + "SELPA.jpg")
+             $("#preview img").attr("src","/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/" + $(".language option:selected").attr("id") + "SELPA.JPG")
              $("#preview a").attr("href", "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/selpa" + $(".language option:selected").attr("id") + ".pdf");
              $("#preview a").attr("target", "_blank");
            });
@@ -92,7 +92,7 @@ $(function(){
 
         $brochureSelect.on("change", function(){
          
-          var file = "./public/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/engSELPA.jpg";
+          var file = "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/engSELPA.JPG";
           
         	
           if ($("#docs option:selected").text().match("^-")){
@@ -111,7 +111,7 @@ $(function(){
         });
 
         $languageSelect.on("change", function() {
-         $("#preview img").attr("src","./public/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/" + $(".language option:selected").attr("id") + "SELPA.jpg");
+         $("#preview img").attr("src","/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/" + $(".language option:selected").attr("id") + "SELPA.JPG");
          $("#preview a").attr("href", "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/selpa" + $(".language option:selected").attr("id") + ".pdf");
          $("#preview a").attr("target", "_blank");
        });
