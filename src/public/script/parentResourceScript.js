@@ -76,7 +76,7 @@ $(function(){
                     } else {
                     $("#langSelectBox .language").show();
                     $("#preview img").attr("src", file)
-                    $("#preview a").attr("href", "pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/selpaeng.pdf");
+                    $("#preview a").attr("href", "/static/pdf/ABCUSDpdfs/" + $("#docs option:selected").attr("id") + "/selpaeng.pdf");
                     $("#preview a").attr("target", "_blank");
                     }
 
