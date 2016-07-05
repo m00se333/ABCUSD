@@ -1,4 +1,4 @@
-{
+var members = {
 	"2014-2016 Term": {
 		"dates": "2014-2016",
 		"members": [
@@ -33,8 +33,8 @@
 				"number": "(562)-348-6480",
 				"email": "epamela31@gmail.com"
 			}
-
 					]
-
 			}
-}
+};
+
+module.exports = members;

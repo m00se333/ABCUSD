@@ -1,4 +1,4 @@
-[
+var events = [
 	{
 		"date": "Thursday October 8, 2015",
 		"title": [
@@ -45,4 +45,6 @@
 				],
 		"location": "District Office"
 	}
-]
+];
+
+module.exports = events;
