@@ -202,7 +202,8 @@ html {
       #links div {
         height: 15vh;
         padding-top: 5vh;
-        width: 23%; } }
+        width: 23%;
+        display: inline-block; } }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
       #links div {
         border: 0px solid black;
