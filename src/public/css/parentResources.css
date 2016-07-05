@@ -302,7 +302,8 @@ h3 {
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
     #langs {
       margin: 3% auto 0;
-      font-size: 3vw; } }
+      font-size: 3vw;
+      width: 65%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     #langs {
       font-size: 3vw;
