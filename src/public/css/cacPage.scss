@@ -255,7 +255,7 @@ html {
   width: 100%;
   font-size: 1.3vw;
   h3 {
-    font-size: 1.5vw;
+    font-size: 3vw;
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -283,8 +283,9 @@ html {
     margin: 0 auto;
     display: block;
   } li {
-    margin: 5% 0 5% 20%;
+    margin: 10% 0 5% 15%;
     line-height: 3vh;
+    font-size: 2.5vw;
     @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape){
       font-size: 2.5vw;
       line-height: 3vw;

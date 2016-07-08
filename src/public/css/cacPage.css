@@ -244,7 +244,7 @@ h1 {
   width: 100%;
   font-size: 1.3vw; }
   #members h3 {
-    font-size: 1.5vw;
+    font-size: 3vw;
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -270,8 +270,9 @@ h1 {
     margin: 0 auto;
     display: block; }
   #members li {
-    margin: 5% 0 5% 20%;
-    line-height: 3vh; }
+    margin: 10% 0 5% 15%;
+    line-height: 3vh;
+    font-size: 2.5vw; }
     @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
       #members li {
         font-size: 2.5vw;

@@ -11,7 +11,7 @@ block content
       #cacMain
         #officers
           .subBoxTopBar
-            h2 CAC Members
+            h2 CAC Board Members
           .contentBox
             #members
               for term in terms 
@@ -21,9 +21,7 @@ block content
                     li
                       |#{member.name}
                       br
-                      |#{member.number}
-                      br
-                      |#{member.email}
+                      |#{member.title}
         #events
           .subBoxTopBar
             h2 Upcoming Events
