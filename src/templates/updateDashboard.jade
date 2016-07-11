@@ -1,0 +1,25 @@
+extends ./layout.jade
+block content
+  title ABCUSD Special Education Home Page
+  body(bgcolor='#A4E7EB')
+    div#updateMain
+      div#updateBox
+        form#updateItem
+          input#name(type='text', placeholder='Name (title optional)')
+          br
+          input#phone(type='text', placeholder='phone number (optional)')
+          br
+          input#email(type='text', placeholder='email (optional)')
+          input#updateButton(type="submit")
+          input#previewData(type='submit', value="preview")
+      div#updatePreview
+
+
+
+
+
+      script#previewItem(type="text/x-handlebars-template")
+        div.previewBox
+          p{{name}}
+          p{{phone}}
+          p{{email}}

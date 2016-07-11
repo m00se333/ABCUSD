@@ -24,6 +24,10 @@ app.get("/parentresources", function(req, res){
 	res.render("parentResources");
 });
 
+app.get("/updateDashboard", function(req, res){
+  res.render("updateDashboard")
+})
+
 app.listen(port, function(){
 	console.log("Frontend server is running on " + port)
 });
