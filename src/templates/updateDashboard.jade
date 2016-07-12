@@ -11,7 +11,7 @@ block content
           br
           input#email(type='text', placeholder='email (optional)')
           input#updateButton(type="submit")
-          input#previewData(type='submit', value="preview")
+          input#previewData(type='submit', value="push updates")
       div#updatePreview
 
 
@@ -20,6 +20,6 @@ block content
 
       script#previewItem(type="text/x-handlebars-template")
         div.previewBox
-          p{{name}}
-          p{{phone}}
-          p{{email}}
+          p Name:  {{name}}
+          p Phone:  {{phone}}
+          p Email:  {{email}}

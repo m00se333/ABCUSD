@@ -14,14 +14,10 @@ block content
             h2 CAC Board Members
           .contentBox
             #members
-              for term in terms 
-                h3 #{term.dates + " Term"} 
-                ul
-                  each member in term.members
-                    li
-                      |#{member.name}
-                      br
-                      |#{member.title}
+                each member in members
+                  ul
+                    each propertyName, property in member
+                      li #{property}: #{propertyName} 
         #events
           .subBoxTopBar
             h2 Upcoming Events
