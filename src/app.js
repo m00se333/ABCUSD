@@ -35,9 +35,12 @@ app.get("/", function(req, res){
 
 app.get("/cac", function(req, res){
   firebase.database().ref("/CAC").once("value", function(snapshot){
-    console.log(snapshot.val());
     var members = snapshot.val();
-    res.render("cacTest", {members: members, events: cacEvents});
+    if (members === null){
+      res.render("updating");
+    } else {
+    res.render("cac", {members: members, events: cacEvents});
+    }
   })
 });
 

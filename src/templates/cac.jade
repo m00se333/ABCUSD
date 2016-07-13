@@ -17,7 +17,7 @@ block content
                 each member in members
                   ul
                     each propertyName, property in member
-                      li #{property}: #{propertyName} 
+                      li #{property.slice(2)}: #{propertyName} 
         #events
           .subBoxTopBar
             h2 Upcoming Events

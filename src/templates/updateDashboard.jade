@@ -1,6 +1,6 @@
 extends ./layout.jade
 block content
-  title ABCUSD Special Education Home Page
+  title ABCUSD Special Education Update Dashboard
   body(bgcolor='#A4E7EB')
     div#updateMain
       div#updateBox
@@ -12,6 +12,7 @@ block content
           input#email(type='text', placeholder='email (optional)')
           input#updateButton(type="submit")
           input#previewData(type='submit', value="push updates")
+          input#deleteButton(type='submit', value="delete")
       div#updatePreview
 
 
@@ -20,6 +21,6 @@ block content
 
       script#previewItem(type="text/x-handlebars-template")
         div.previewBox
-          p Name:  {{name}}
-          p Phone:  {{phone}}
-          p Email:  {{email}}
+          p Name:  {{a_Name}}
+          p Phone:  {{b_Phone}}
+          p Email:  {{c_email}}

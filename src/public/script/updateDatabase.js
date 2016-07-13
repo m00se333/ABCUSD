@@ -5,7 +5,7 @@ var emailField = $("#email");
 var $submitButton = $("#updateButton");
 var $previewButton = $("#previewData");
 var $previewWindow = $("#updatePreview");
-
+var $deleteButton = $("#deleteButton");
 var config = {
     apiKey: "AIzaSyBRgj_iW46CU6Ur2X0u6_nu5FEqDRlzwPQ",
     authDomain: "abcusdserver.firebaseapp.com",
@@ -24,9 +24,9 @@ function captureInput(node, eventHandler){
       node.on(eventHandler, function(event){
           event.preventDefault();
           var inputFields = {
-            name: nameField.val(),
-            phone: phoneField.val(),
-            email: emailField.val()
+            a_Name: nameField.val(),
+            b_Phone: phoneField.val(),
+            c_email: emailField.val()
           };
 
           for (key in inputFields){
@@ -56,24 +56,33 @@ function pushUpdates(node, eventHandler){
   })
 }
 
-// Retrieving Data
-$previewButton.on("click", function(event){
+// Retrieving Data but this is done on the backend when the page is loaded.
+
+/*$previewButton.on("click", function(event){
   event.preventDefault();
   firebase.database().ref("CAC").once("value", function(snapshot){
     var databaseLength = snapshot.val().length;
-
     for (var x = 0; x < databaseLength; x++){
       console.log(snapshot.child(x).val());
     }
-
   });
 });
+*/
+
+function deleteCheck(node, eventHandler){
+  node.on(eventHandler, function(event){
+    event.preventDefault();
+    firebase.database().ref("CAC").remove();
+    $previewWindow.children().empty();
+  });
+};
 
 
 
 
 captureInput($submitButton, "click");
 pushUpdates($previewButton, "click");
+deleteCheck($deleteButton, "click");
 
 
 
