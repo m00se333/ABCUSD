@@ -3,24 +3,68 @@ block content
   title ABCUSD Special Education Update Dashboard
   body(bgcolor='#A4E7EB')
     div#updateMain
+      div#pageSelector
+        div.choice
+          span CAC Officers
+        div.choice 
+          span CAC Events
+        div.choice 
+          span Staff List
       div#updateBox
+        div#editField
         form#updateItem
-          input#name(type='text', placeholder='Name (title optional)')
-          br
-          input#phone(type='text', placeholder='phone number (optional)')
-          br
-          input#email(type='text', placeholder='email (optional)')
-          input#updateButton(type="submit")
-          input#previewData(type='submit', value="push updates")
-          input#deleteButton(type='submit', value="delete")
+        input#updateButton(type="submit", value="Submit and preview")
+        input#sendData(type='submit', value="Push updates")
+        input#deletePreview(type='submit', value="Delete whole preview")
+        input#deleteExistingDatabase(type='submit', value="experimental!")
       div#updatePreview
 
 
 
+       script#previewText(type="text/x-handlebars-template")
+        span#updateChoice {{text}}
 
-
-      script#previewItem(type="text/x-handlebars-template")
+      script#previewMember(type="text/x-handlebars-template")
         div.previewBox
           p Name:  {{a_Name}}
           p Phone:  {{b_Phone}}
           p Email:  {{c_email}}
+
+      script#updateCACMembers(type="text/x-handlebars-template")
+          input#name(type='text', placeholder='Name (title optional)')
+          input#phone(type='text', placeholder='phone number (optional)')
+          input#email(type='text', placeholder='email (optional)')
+
+      script#previewEvent(type="text/x-handlebars-template")
+          div.previewBox
+            p Date: {{a_Date}}
+            p Title: {{b_Title}}
+            p Subheading: {{c_SubHeading}}
+            p Location: {{d_Location}}  
+
+      script#updateCACEvents(type="text/x-handlebars-template")
+          input#eventDate(type="text", placeholder="Long-form date")
+          input#eventTitle(type="text", placeholder="Title of the event")
+          input#eventSubheading(type="text", placeholder="Subheading (optional)")
+          input#eventLocation(type="text", placeholder="Location")
+
+      script#previewStaff(type="text/x-handlebars-template")
+          div.previewBox
+            p Officer: {{a_AgentName}}
+            p Officer Title: {{b_AgentTitle}}
+            p Officer Extension: {{c_AgentExtension}}
+            p Secretary: {{d_Secretary}}
+            p Secretary Extension: {{e_SecretaryExtension}}
+
+      script#updateStaffList(type="text/x-handlebars-template")
+          span.prompt Officeholder information:
+          input#agentName(type="text", placeholder="Name")
+          input#agentTitle(type="text", placeholder="Title (optional)")
+          input#agentExtension(type="text", placeholder="Extension")
+          span.prompt Secretary information:
+          input#secretary(type="text", placeholder="Secretary")
+          input#secretaryExtension(type="text", placeholder="Extension")
+
+
+
+

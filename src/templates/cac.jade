@@ -16,8 +16,8 @@ block content
             #members
                 each member in members
                   ul
-                    each propertyName, property in member
-                      li #{property.slice(2)}: #{propertyName} 
+                    each key, value in member
+                      li #{value.slice(2)}: #{key} 
         #events
           .subBoxTopBar
             h2 Upcoming Events
@@ -31,17 +31,5 @@ block content
                 | 							6:00 - 6:30 p.m. Pizza
                 br
                 | 							6:30 - 8:00 p.m. Presentation
-              each event in events
-                .event
-                  h3 Date:
-                  |#{event.date}
-                  if ("title".length = 2)
-                    h3 #{event.title[0]}
-                    |#{event.title[1]}
-                    h3 Location:
-                    |#{event.location}
-                  else
-                    h3 #{event.title[0]}
-                    h3 Location:
-                    |#{event.location}
+              
                 

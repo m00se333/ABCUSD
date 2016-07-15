@@ -6,35 +6,8 @@ block content
       #topBanner
         img(src='static/img/topBanner1.png')
       ul#mobileStaffList
-        li
-          | Gloria Lopez, SELPA Director, x21141
-          br
-          |               Suzanne Yamashiro, Secretary, x21141
-        li
-          | Leslie Fagan, Director of Pupil Support Services, x21156
-          br
-          |   						Amy Garcia, Dept. Secretary, x21156
-        li
-          | Soco Verduzco, Special Education Supervisor, x21110
-          br
-          |   						Jeanett Beard, Secretary, x21110
-        li
-          | Dr. William Gee, Special Education Supervisor, x21144
-          br
-          |   						Maria Valino, Secretary, x21144
-        li
-          | Kristin Guerrero, Coodinator Mental Health, x21180
-          br
-          |               Patty Perez, Secretary, x21180
-        li
-          | Stacia Abe, Program Specialist, x21060
-          br
-          |   						Sarah Garcia, Secretary, x21060
-        li
-          | Joy Dye, Program Specialist, x21060
-          br
-          |   						Sarah Garcia, Secretary, x21060
-        li Pat Statler, Secretary, x21145
+        each staff in staffList
+          li #{staff.a_AgentName} #{staff.b_AgentTitle} #{staff.c_AgentExtension} #{staff.d_Secretary} #{staff.e_SecretaryExtension} 
       #links
         a(href='/cac')
           #pHand CAC Info

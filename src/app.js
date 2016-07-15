@@ -30,17 +30,25 @@ app.set("view engine", "jade");
 app.set("views", __dirname + "/templates");
 
 app.get("/", function(req, res){
-	res.render("index");
+  firebase.database().ref("/Staff").once("value", function(snapshot){
+    var staffList = snapshot.val();
+
+    if (staffList === null) {
+      res.render("updating");
+    } else {
+      res.render("index", {staffList: staffList})
+    }
+  })
 });
 
 app.get("/cac", function(req, res){
-  firebase.database().ref("/CAC").once("value", function(snapshot){
+  firebase.database().ref("/CAC_Members").once("value", function(snapshot){
     var members = snapshot.val();
     if (members === null){
       res.render("updating");
     } else {
     res.render("cac", {members: members, events: cacEvents});
-    }
+    } 
   })
 });
 
