@@ -42,24 +42,43 @@ app.get("/", function(req, res){
 });
 
 app.get("/cac", function(req, res){
-  firebase.database().ref("/CAC_Members").once("value", function(snapshot){
-    var members = snapshot.val();
-    if (members === null){
-      res.render("updating");
-    } else {
-    res.render("cac", {members: members, events: cacEvents});
-    } 
-  })
+
+  var firebaseData = {};
+
+  function getFirebaseData(endpoint){
+    return firebase.database().ref(endpoint).once("value", function(snapshot){
+          return snapshot.val();
+    });
+  }
+
+  Promise.all([getFirebaseData("CAC_Members"), getFirebaseData("CAC_Events")]).then(function(snapshots) {
+    firebaseData.members = snapshots[0].val();
+    firebaseData.events = snapshots[1].val();
+    console.log(firebaseData);
+    res.render("cac", firebaseData);
+  });
 });
+
+
+
 
 app.get("/parentresources", function(req, res){
 	res.render("parentResources");
 });
 
+
+
+
 app.get("/updateDashboard", function(req, res){
   res.render("updateDashboard")
 })
 
+
+
+
 app.listen(port, function(){
 	console.log("Frontend server is running on " + port)
 });
+
+
+

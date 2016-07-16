@@ -16,12 +16,13 @@ block content
         input#updateButton(type="submit", value="Submit and preview")
         input#sendData(type='submit', value="Push updates")
         input#deletePreview(type='submit', value="Delete whole preview")
-        input#deleteExistingDatabase(type='submit', value="experimental!")
+        input#deleteExistingDatabase(type='submit', value="Delete this endpoint")
+        input#retrieveDatabase(type='submit', value="See what's in the database")
       div#updatePreview
 
 
 
-       script#previewText(type="text/x-handlebars-template")
+      script#previewText(type="text/x-handlebars-template")
         span#updateChoice {{text}}
 
       script#previewMember(type="text/x-handlebars-template")

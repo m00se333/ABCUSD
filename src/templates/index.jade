@@ -7,7 +7,8 @@ block content
         img(src='static/img/topBanner1.png')
       ul#mobileStaffList
         each staff in staffList
-          li #{staff.a_AgentName} #{staff.b_AgentTitle} #{staff.c_AgentExtension} #{staff.d_Secretary} #{staff.e_SecretaryExtension} 
+          li(style='white-space:pre;') #{staff.a_AgentName} #{staff.b_AgentTitle} #{staff.c_AgentExtension} 
+            |#{staff.d_Secretary} #{staff.e_SecretaryExtension} 
       #links
         a(href='/cac')
           #pHand CAC Info

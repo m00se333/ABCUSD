@@ -31,5 +31,12 @@ block content
                 | 							6:00 - 6:30 p.m. Pizza
                 br
                 | 							6:30 - 8:00 p.m. Presentation
-              
+              each event in events
+                .event
+                  h3 Date:
+                  |#{event.a_Date}
+                  br
+                  |#{event.b_Title}
+                  br
+
                 
