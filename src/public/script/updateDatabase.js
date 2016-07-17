@@ -79,7 +79,6 @@ function captureInput(node){
               removeEmptyFields(inputFields);
               newDataArray.push(inputFields);
               selectFormTemplate($("#previewEvent"), inputFields, $("#updatePreview"))
-              
               clearFields();
 
           } else if (testFor("Staff List")) {
@@ -113,51 +112,61 @@ function pushUpdates(node){
         
         event.preventDefault();
 
-        if (testFor("CAC Officers")){
+        if (newDataArray.length === 0) {
+              
+              alert("You can't push nothing")
 
-          firebase.database().ref("/CAC_Members").set(newDataArray);
-        
-        } else if (testFor("CAC Events")) {
-          
-          firebase.database().ref("/CAC_Events").set(newDataArray);
-        
-        } else if (testFor("Staff List")){
-          
-          firebase.database().ref("/Staff").set(newDataArray);
-        }
+        } else {
+              
+              if (testFor("CAC Officers")){
+
+              firebase.database().ref("/CAC_Members").set(newDataArray);
+            
+              } else if (testFor("CAC Events")) {
+                
+                firebase.database().ref("/CAC_Events").set(newDataArray);
+              
+              } else if (testFor("Staff List")){
+                
+                firebase.database().ref("/Staff").set(newDataArray);
+              }
+        }   
     });
 };
 
-// Retrieving Data but this is done on the backend when the page is loaded.
 
-/*$previewButton.on("click", function(event){
-  event.preventDefault();
-  firebase.database().ref("CAC").once("value", function(snapshot){
-    var databaseLength = snapshot.val().length;
-    for (var x = 0; x < databaseLength; x++){
-      console.log(snapshot.child(x).val());
-    }
-  });
-});
-*/
-
-
+// Basically the controller for whatever endpoint is currently being edited
 function retrieveEndpoint(node){
   node.on("click", function(event){
     event.preventDefault();
 
-
+        // hits the endpoint argument, collects all the children and for each child
+        // object it is passed into the template argument appeneded at the destination
+        // html node.
         function retrieveEndpointData(endpoint, template){
           firebase.database().ref(endpoint).once("value", function(snapshot){
-                  var databaseLength = snapshot.val().length;
-                    for (var x = 0; x < databaseLength; x++){
-                      //newDataArray.push(snapshot.child(x).val());
-                      var item = snapshot.child(x).val();
+                  
+                if (snapshot.val() === null){
+                      //Appends error message, but persists and needs to be removed
+                      //selectFormTemplate($("#noData"), {}, $("#updatePreview"))
+                      console.log("Nothing in the database.")
+                      alert("There is nothing in the database, add some data.")
+                
+                } else {
 
-                      selectFormTemplate(template, item, $("#updatePreview"))
-                    }
-                });
-          }
+                      var databaseLength = snapshot.val().length;
+                        for (var x = 0; x < databaseLength; x++){
+                          
+                          var item = snapshot.child(x).val();
+
+
+                          newDataArray.push(item)
+
+                          selectFormTemplate(template, item, $("#updatePreview"))
+                        }
+                }
+            });
+        }
 
 
               if (testFor("CAC Officers")){
@@ -169,6 +178,7 @@ function retrieveEndpoint(node){
 
               } else if (testFor("Staff List")){
                 retrieveEndpointData("Staff", $("#previewStaff"));
+
               }
       })
 
@@ -205,7 +215,10 @@ function deleteDatabaseData(node){
 function deletePreview(node){
   node.on("click", function(event){
     event.preventDefault();
-    $previewWindow.children().empty();
+    // finds every div with the class previewBox and removes it
+    // this works much better when working with $previewWindow since
+    // created and read data occupies the same divs.
+    $(document).find("div .previewBox").remove();
     newDataArray = [];
   });
 };
@@ -277,7 +290,12 @@ function switchCheck(node){
     });
 }
 
-
+//working for mouse enter with dynamically created nodes.
+function editBox(){
+  $(document).on("mouseenter", ".previewBox", function(){
+    console.log("Hello.")
+  })
+}
 
 
 
@@ -289,7 +307,7 @@ deletePreview($deletePreviewButton);
 deletePreview($sendData);
 deleteDatabaseData($deleteDatabaseButton);
 retrieveEndpoint($retrieveButton);
-
+editBox();
 
 
 
