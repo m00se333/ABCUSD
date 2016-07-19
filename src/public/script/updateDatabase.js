@@ -237,6 +237,15 @@ function selectFormTemplate(template, object, destination){
   $(destination).append($editTextHTML);
 }
 
+function prependEditBox(template, object, destination){
+  var editTextTemplate = $(template).html();
+  var template = Handlebars.compile(editTextTemplate);
+  var editTextHTML = template(object);
+  var $editTextHTML = $(editTextHTML);
+  // prepend instead of append
+  $(destination).prepend($editTextHTML);
+}
+
 // switching endpoints clears out the current form and replaces it with the correct endpoint interface.
 // (forms you enter the data into)
 function switchAndDelete(){
@@ -292,10 +301,20 @@ function switchCheck(node){
 
 //working for mouse enter with dynamically created nodes.
 function editBox(){
+  // mouse enter
   $(document).on("mouseenter", ".previewBox", function(){
-    console.log("Hello.")
-  })
+    $(".editBox").remove();
+    $(".editOptions").remove();
+    prependEditBox($("#editBox"), {}, $(this));
+    prependEditBox($("#editBoxOptions"), {}, $(".editBox"));
+  });
+  // mouse leave
+  /*$(document).on("mouseleave", ".editBox", function(){
+    $(".editBox").remove();
+  });*/
 }
+
+
 
 
 

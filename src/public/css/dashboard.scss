@@ -30,46 +30,53 @@ html {
   background: white;
   box-shadow: -7px 7px 5px 0 #9e9e9e;
   margin: 2.5% auto;
-  } #updateBox {
-      display: block;
-      width: 30%;
-      float: left;
-      clear: both;
-      margin: 3% 10%;
-      border: 1px solid #9e9e9e;
-      } form {
-          margin: 10% auto;
-          display: block;
-          } input[type="text"] {
+    #updateBox {
+        display: block;
+        width: 30%;
+        float: left;
+        clear: both;
+        margin: 3% 10%;
+        border: 1px solid #9e9e9e;
+           form {
+              margin: 10% auto;
+              display: block;
+              
+              input[type="text"]{
               width: 90%;
               display: block;
               margin: 0 auto;
+              }
 
-          } input[type="submit"] {
+              input[type="submit"]{
               width: 75%;
               margin: 2% auto;
               display: block;
               @include blue_white
-          }
-    #pageSelector {
-      width: 50%;
-      height: 30%;
-      display: block;
-      float: left;
-      box-shadow: -1px 5px 3px #9e9e9e;
-      } .choice {
-          height: 50%;
-          width: 25%;
-          border: 1px solid black;
-          display: block;
-          margin: 10% 0% 5% 6%;
-          float: inherit;
-          @include blue_white;
-            } span {
-              margin: 25% 10%;
-              display: block;
-              text-align: center;
               }
+          }
+    }
+}
+
+
+#pageSelector {
+width: 50%;
+height: 30%;
+display: block;
+float: left;
+box-shadow: -1px 5px 3px #9e9e9e;
+} .choice {
+height: 50%;
+width: 25%;
+border: 1px solid black;
+display: block;
+margin: 10% 0% 5% 6%;
+float: inherit;
+@include blue_white;
+  } span {
+    margin: 25% 10%;
+    display: block;
+    text-align: center;
+    }
         //.choice:active {
           //color: black;
           //background: yellow;
@@ -83,6 +90,35 @@ html {
 
 .previewBox{
   box-shadow: 0px 3px 3px #9e9e9e;
+  position: relative;
+    p:first-of-type {
+      margin:0;
+    }
+    p:last-of-type{
+      margin-bottom: 0.5%;
+    }
+    .editOptions{
+      position: relative;
+      z-index: 5;
+      height: 100%;
+      width: 100%;
+        div {
+        float: left;
+        border: 1px solid black;
+        background: white;
+        color: black;
+        height: 50%;
+        width: 30%;
+        text-align: center;
+        line-height: 11vh  
+        } 
+        div:nth-child(1){
+          margin: 7% 5% 10% 15%;
+        }
+        div:nth-child(2){
+          margin: 7% 15% 10% 5%;
+        }
+    }
   } 
 
 #updateChoice {
@@ -98,4 +134,13 @@ html {
 .prompt{
   margin: 0;
 }
+
+.editBox{
+  background: black;
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 102%;
+  bottom: 0;
+} 
 
